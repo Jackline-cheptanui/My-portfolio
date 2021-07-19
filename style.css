@@ -1,0 +1,125 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+body{
+	background-image: url(images/port.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+img{
+	width :100%;
+	height :100%;
+}
+ #hero{
+	height: 90vh;
+	width: 100%;
+	padding-top: 4rem;
+}
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 90%;
+	margin-left: 40px;
+	margin-top: 70px;
+	height: 50%;
+
+}
+#hero.container.left{
+	flex:9px;
+}
+#hero.left.subheading{
+	font-size: 1.8rem;
+	color:black;
+	font-weight: 500;
+
+	
+}
+#hero.left.heading{
+	font-size: 7rem;
+	font-family: "montserrat",sans-serif;
+	font-weight: 900;
+}
+#hero.left.heading.career span{
+	position: relative;
+	bottom: 60px;
+	animation: reverse 1s ease-in-out forwards;
+	padding-left: 80px;
+
+	
+}
+#button{
+	margin-top: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap:2rem
+
+}
+#button-content-btn{
+	display: inline-block;
+	background-color: red;
+	color: white;
+	padding: 0.6em 1.7em;
+	font-size: 1.8rem;
+	border-radius: 50px;
+	border-radius: 20px;
+
+}
+
+
+
+@media only screen and(max-width:760px){
+	html{
+		font-size: 10px;
+	}
+	#hero-container{
+		flex-direction: column-reverse;
+	}
+	
+
+}
+@keyframes reveal{
+	0%{
+		bottom: 70px;
+	}
+}
+
+.nav{
+	background:black;
+	height: 80px;
+	width: 100%;
+	
+	padding: 0px 5%;
+	justify-content: space-between;
+}
+
+nav ul{
+	float: right;
+	margin-right:  20px;
+
+}
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a{
+	color:white;
+	font-size: 17px;
+	text-transform: uppercase;
+	padding: 6px 13px;
+	border-radius: 3px;
+
+}
+a.active,a:hover{
+	background:blue;
+	transition: 5s;
+}
+
+
